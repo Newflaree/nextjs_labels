@@ -1,3 +1,5 @@
+import {MainLayout} from '@/components/layouts'
+import {Sidebar, SlideShow} from '@/components/ui'
 import { Inter } from 'next/font/google'
 
 
@@ -5,6 +7,9 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <h1>Hola</h1>
+    <MainLayout title='Inicio'>
+      <SlideShow />
+      <Sidebar />
+    </MainLayout>
   )
 }
