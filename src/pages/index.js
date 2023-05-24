@@ -20,7 +20,7 @@ export default function Home() {
           xs={ 0 }
           width={ drawerWidth }
           sx={{ 
-            backgroundColor: 'red',
+            backgroundColor: '#F2F2F2',
             display: {
               xs: 'none',
               sm: 'flex'

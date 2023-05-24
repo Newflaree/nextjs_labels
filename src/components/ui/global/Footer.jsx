@@ -28,23 +28,6 @@ export const Footer = () => {
           color: 'white'
         }}
       >
-        <Typography
-          variant='h2'
-          component='h2'
-          fontWeight='bold'
-          textTransform='uppercase'
-          mb={4}
-        >
-          Conoce más sobre nosotros
-        </Typography>
-
-        <Divider
-          sx={{
-            backgroundColor: 'white',
-            mx: 6,
-            my: 3
-          }} 
-        />
         {
           footerData.map( item => (
             <Box
@@ -65,6 +48,13 @@ export const Footer = () => {
             </Box>
           ))
         }
+        <Divider
+          sx={{
+            backgroundColor: 'white',
+            mx: 6,
+            my: 3
+          }} 
+        />
       </Box>
     </footer>
   );

@@ -40,13 +40,16 @@ export const SideMenu = () => {
         <List>
           {/*TODO: Crear NextLinks*/}
           <ListItem>
-            Quienes Somos
+            Historia
           </ListItem>
           <ListItem>
-            Quienes Somos
+            Misión
           </ListItem>
           <ListItem>
-            Quienes Somos
+            Objetivos
+          </ListItem>
+          <ListItem>
+            Declaración de garantía
           </ListItem>
         </List>
       </Box>

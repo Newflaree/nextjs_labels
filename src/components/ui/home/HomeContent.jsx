@@ -3,15 +3,18 @@ import { Grid } from '@mui/material';
 // Components
 import { HomeCard } from '.';
 
+
 export const HomeContent = () => {
   return (
     <Grid
-      p={ 4 }
       container
       display='flex'
       spacing={ 2 }
       sx={{
-        backgroundColor: 'info'
+        p: {
+          xs: 3,
+          sm: 8
+        }
       }}
     >
       <Grid
@@ -19,14 +22,20 @@ export const HomeContent = () => {
         xs={ 12 }
         sm={ 6 }
       >
-        <HomeCard />
+        <HomeCard
+          cardTitle='Servicios Publicitarios'
+          cardImage='https://res.cloudinary.com/dtkffzs3f/image/upload/v1684949584/services1_yeigyz.jpg'
+        />
       </Grid>
       <Grid
         item
         xs={ 12 }
         sm={ 6 }
       >
-        <HomeCard />
+        <HomeCard
+          cardTitle='Servicios Construcción'
+          cardImage='https://res.cloudinary.com/dtkffzs3f/image/upload/v1684949593/services2_vtxqij.jpg'
+        />
       </Grid>
     </Grid>
   );
