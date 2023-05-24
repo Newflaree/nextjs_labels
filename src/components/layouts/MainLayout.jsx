@@ -13,6 +13,7 @@ export const MainLayout = ({ title = 'Custom Title', pageDescription = '', child
         <meta name='description' content={ pageDescription } />
       </Head>
 
+      <WSPPBtn />
       <nav>
         { /* Navbar */ }
         <Navbar />
@@ -23,7 +24,7 @@ export const MainLayout = ({ title = 'Custom Title', pageDescription = '', child
       <main
         style={{
           margin: 'auto',
-          marginTop: '80px',
+          marginTop: '35px',
           maxWidth: '1440px',
           padding: '0px'
         }}
@@ -31,7 +32,6 @@ export const MainLayout = ({ title = 'Custom Title', pageDescription = '', child
         { children }
       </main>
 
-      <WSPPBtn />
       <Footer />
     </>
   );
