@@ -15,19 +15,23 @@ export const WSPPBtn = () => {
         legacyBehavior
       >
         <Link
-        sx={{
-          position: 'fixed',
-          bottom: '27px',
-          right: '27px',
-        }}
+          sx={{
+            margin: 'auto',
+            padding: 2,
+            backgroundColor: 'green',
+            borderRadius: '50%',
+            position: 'fixed',
+            bottom: '20px',
+            right: '20px',
+          }}
         >
           <WhatsAppIcon
             sx={{
-              fontSize: '60px',
+              fontSize: '40px',
               transition: 'all 0.3s ease',
-              color: 'green',
+              color: 'white',
               ":hover": {
-                fontSize: '65px'
+                fontSize: '50px'
               }
             }}
           />
