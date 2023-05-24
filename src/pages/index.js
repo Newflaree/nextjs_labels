@@ -1,5 +1,5 @@
 import {MainLayout} from '@/components/layouts'
-import { SlideShow} from '@/components/ui'
+import { HomeContent, Sidebar, SlideShow} from '@/components/ui'
 import {Grid} from '@mui/material'
 import { Inter } from 'next/font/google'
 
@@ -29,7 +29,7 @@ export default function Home() {
             }
           }}
         >
-          Sidebar
+          <Sidebar />
         </Grid>
         <Grid
           item
@@ -39,7 +39,7 @@ export default function Home() {
             backgroundColor: 'blue',
           }}
         >
-          Main
+          <HomeContent />
         </Grid>
       </Grid>
     </MainLayout>

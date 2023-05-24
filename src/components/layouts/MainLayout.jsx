@@ -22,7 +22,8 @@ export const MainLayout = ({ title = 'Custom Title', pageDescription = '', child
 
       <main
         style={{
-          margin: '80px auto',
+          margin: 'auto',
+          marginTop: '80px',
           maxWidth: '1440px',
           padding: '0px'
         }}
