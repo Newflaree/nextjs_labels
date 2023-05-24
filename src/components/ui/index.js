@@ -1,4 +1,3 @@
-export * from './Footer';
-export * from './Navbar';
-export * from './Sidebar';
-export * from './SlideShow';
+export * from './global';
+export * from './home';
+

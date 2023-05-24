@@ -30,7 +30,7 @@ export const Navbar = () => {
             color='black'
           >
             <Image 
-              src='https://res.cloudinary.com/newflare/image/upload/v1684787688/logo_lcorag.png'
+              src={ process.env.NEXT_PUBLIC_LOGO || '' }
               alt='aljflafdkj'
               width={ 40 }
               height={ 40 }

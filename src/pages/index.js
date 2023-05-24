@@ -1,5 +1,5 @@
 import {MainLayout} from '@/components/layouts'
-import {Sidebar, SlideShow} from '@/components/ui'
+import { SlideShow} from '@/components/ui'
 import { Inter } from 'next/font/google'
 
 
@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <MainLayout title='Inicio'>
       <SlideShow />
-      <Sidebar />
     </MainLayout>
   )
 }

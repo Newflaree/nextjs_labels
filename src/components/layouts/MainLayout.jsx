@@ -9,7 +9,7 @@ export const MainLayout = ({ title = 'Custom Title', pageDescription = '', child
     <>
       <Head>
         <title>Labels | { title }</title>
-        <link rel='icon' href='https://res.cloudinary.com/newflare/image/upload/v1684787688/logo_lcorag.png' />
+        <link rel='icon' href={ process.env.NEXT_PUBLIC_LOGO } />
         <meta name='description' content={ pageDescription } />
       </Head>
 
