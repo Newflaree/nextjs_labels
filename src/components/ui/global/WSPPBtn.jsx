@@ -7,16 +7,32 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export const WSPPBtn = () => {
   return (
+    <IconButton>
       <NextLink 
-        href=''
+        href={ process.env.NEXT_PUBLIC_PHONE }
+        target='_blank'
         passHref 
         legacyBehavior
       >
-        <Link>
-          <IconButton>
-            <WhatsAppIcon fontSize='large' />
-          </IconButton>
+        <Link
+        sx={{
+          position: 'fixed',
+          bottom: '27px',
+          right: '27px',
+        }}
+        >
+          <WhatsAppIcon
+            sx={{
+              fontSize: '60px',
+              transition: 'all 0.3s ease',
+              color: 'green',
+              ":hover": {
+                fontSize: '65px'
+              }
+            }}
+          />
         </Link>
       </NextLink>
+    </IconButton>
   );
 }
