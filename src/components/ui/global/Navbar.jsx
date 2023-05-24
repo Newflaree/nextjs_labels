@@ -1,5 +1,8 @@
+// React
+import { useContext } from 'react';
 // Next.js
 import NextLink from 'next/link';
+import Image from 'next/image';
 // Material UI
 import {
   AppBar,
@@ -12,10 +15,15 @@ import {
   Toolbar,
   Typography
 } from '@mui/material';
-import Image from 'next/image';
+// Material Icons
+import MenuIcon from '@mui/icons-material/Menu';
+// Context
+import { UIContext } from '@/context';
 
 
-export const Navbar = () => {
+  export const Navbar = () => {
+    const { toggleSideMenu } = useContext( UIContext );
+
   return (
     <AppBar>
       <Toolbar>
@@ -35,7 +43,7 @@ export const Navbar = () => {
               width={ 40 }
               height={ 40 }
             />
-            <Typography>Labels Corp</Typography>
+            <Typography ml={ 1 }>Labels Corp</Typography>
           </Link>
         </NextLink>
 
@@ -94,6 +102,18 @@ export const Navbar = () => {
             </Link>
           </NextLink>
         </Box>
+
+        <Button
+          onClick={ toggleSideMenu }
+          sx={{
+            display: {
+              xs: 'flex',
+              sm: 'none'
+            }
+          }}
+        >
+          <MenuIcon />
+        </Button>
       </Toolbar>
     </AppBar>
   );
