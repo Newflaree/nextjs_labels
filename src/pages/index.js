@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 
 
 const inter = Inter({ subsets: ['latin'] })
+const drawerWidth = 270;
 
 export default function Home() {
   return (
@@ -13,14 +14,11 @@ export default function Home() {
       <Grid
         container
         spacing={ 0 }
-        sx={{
-          height: '100vh'
-        }}
       >
         <Grid
           item
           xs={ 0 }
-          sm={ 3 }
+          width={ drawerWidth }
           sx={{ 
             backgroundColor: 'red',
             display: {
@@ -29,14 +27,16 @@ export default function Home() {
             }
           }}
         >
-          <Sidebar />
+          <Sidebar drawerWidth={ drawerWidth } />
         </Grid>
         <Grid
           item
-          xs={ 12 }
-          sm={ 9 }
+          width={ `calc( 100% - ${ drawerWidth }px )` }
           sx={{ 
-            backgroundColor: 'blue',
+            width: {
+              xs: '100vw',
+              sm: `calc( 100% - ${ drawerWidth }px )`
+            }
           }}
         >
           <HomeContent />

@@ -12,7 +12,7 @@ export const lightTheme = createTheme({
       main: '#3A64D8'
     },
     info: {
-      main: '#fff'
+      main: '#ffd'
     }
   },
   components: {
@@ -23,7 +23,6 @@ export const lightTheme = createTheme({
     },
     MuiAppBar: {
       defaultProps: {
-        elevation: 0,
         position: 'fixed',
       },
       styleOverrides: {

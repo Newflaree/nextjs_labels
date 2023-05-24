@@ -2,7 +2,7 @@
 // React
 import { useContext } from 'react';
 // Material UI
-import {Box, Drawer, InputAdornment, List, ListItem, ListItemIcon, ListItemText} from '@mui/material';
+import {Box, Divider, Drawer, InputAdornment, List, ListItem, ListItemIcon, ListItemText} from '@mui/material';
 // Material Icons
 import { MaleOutlined } from '@mui/icons-material';
 // Context
@@ -32,6 +32,21 @@ export const SideMenu = () => {
           </ListItem>
           <ListItem>
             Galería
+          </ListItem>
+        </List>
+      </Box>
+      <Divider />
+      <Box sx={{ width: 250, paddingTop: 5 }}>
+        <List>
+          {/*TODO: Crear NextLinks*/}
+          <ListItem>
+            Quienes Somos
+          </ListItem>
+          <ListItem>
+            Quienes Somos
+          </ListItem>
+          <ListItem>
+            Quienes Somos
           </ListItem>
         </List>
       </Box>
